@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    MAKEFILE                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/28 17:00:30 by marvin            #+#    #+#              #
-#    Updated: 2023/03/09 14:36:36 by miguelro         ###   ########.fr        #
+#    Updated: 2023/03/11 15:39:45 by miguelro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = pipex
 
 CC = gcc
 RM = rm -f
-CFLAGS = -Wall -Wextra -Werror -Imlx -g
+CFLAGS = -Wall -Wextra -Werror -Imlx -g #-fsanitize=address
 
 
 LIBFT = ./Libft/libft.a

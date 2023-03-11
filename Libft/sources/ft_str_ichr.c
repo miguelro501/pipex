@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pipex.h                                            :+:      :+:    :+:   */
+/*   ft_str_ichr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 16:24:20 by miguelro          #+#    #+#             */
-/*   Updated: 2023/03/11 15:45:42 by miguelro         ###   ########.fr       */
+/*   Created: 2023/03/10 12:43:28 by miguelro          #+#    #+#             */
+/*   Updated: 2023/03/10 12:45:17 by miguelro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PIPEX_H
-# define PIPEX_H
+#include "libft.h"
 
-# include "ft_printf.h"
-# include "libft.h"
-# include "pipex.h"
-# include <stdio.h>
-# include <stdlib.h>
-# include <unistd.h>
+int	str_ichr(const char *str, char c)
+{
+	int	i;
 
-#endif
+	i = -1;
+	while (str[++i])
+	{
+		if (str[i] == c)
+			return (i);
+	}
+	return (-1);
+}

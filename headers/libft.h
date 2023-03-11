@@ -6,7 +6,7 @@
 /*   By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 17:50:33 by marvin            #+#    #+#             */
-/*   Updated: 2023/03/09 17:30:43 by miguelro         ###   ########.fr       */
+/*   Updated: 2023/03/10 12:51:04 by miguelro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ char				*ft_strchr(const char *str, int c);
 char				*ft_strdup(const char *string);
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_strjoin2(char *s1, char *s2);
 size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t				ft_strlcpy(char *dst, const char *src, size_t dst_size);
 size_t				ft_strlen(const char *s);
@@ -72,7 +73,7 @@ int					ft_tolower(int ch);
 int					ft_toupper(int ch);
 char				*get_next_line(int fd);
 int					ft_clean(char *str);
-char				*ft_strjoin2(char *s1, char *s2);
 void				free_arr(char **arr);
+int					str_ichr(const char *str, char c);
 
 #endif

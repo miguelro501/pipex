@@ -6,7 +6,7 @@
 #    By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/04 15:22:05 by miguelro          #+#    #+#              #
-#    Updated: 2023/02/23 15:37:36 by miguelro         ###   ########.fr        #
+#    Updated: 2023/03/10 12:51:37 by miguelro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c\
 ft_substr.c ft_strjoin.c ft_strtrim.c\
 ft_lstnew.c ft_lstadd_front.c ft_lstclear.c\
 ft_lstsize.c ft_lstlast.c ft_lstiter.c\
-ft_lstadd_back.c ft_lstdelone.c ft_lstmap.c\
+ft_lstadd_back.c ft_lstdelone.c ft_lstmap.c ft_str_ichr.c\
 get_next_line.c get_next_line_utils.c \
 
 $(VERBOSE).SILENT:
