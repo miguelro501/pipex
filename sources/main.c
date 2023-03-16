@@ -6,7 +6,7 @@
 /*   By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 16:24:22 by miguelro          #+#    #+#             */
-/*   Updated: 2023/03/11 15:47:46 by miguelro         ###   ########.fr       */
+/*   Updated: 2023/03/16 14:56:10 by miguelro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,10 +77,10 @@ int	main(int ac, char **av, char **envp)
 
 	if (ac != 5)
 		error("Invalid number of parameters\n");
-	f1 = open(av[1], O_RDONLY);
+	f1 = open(av[1], O_CREAT | O_RDWR);
 	f2 = open(av[4], O_CREAT | O_RDWR | O_TRUNC, 0644);
 	if (f1 < 0 || f2 < 0)
-		error("Error while opening infile or outfile\n");
+		perror("Error while opening infile or outfile\n");
 	if (pipe(pipe_fd) == -1)
 		error("Error creating the pipe");
 	pid = fork();

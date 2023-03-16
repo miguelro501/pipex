@@ -6,7 +6,7 @@
 #    By: miguelro <miguelro@students.42lisboa.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/28 17:00:30 by marvin            #+#    #+#              #
-#    Updated: 2023/03/11 15:39:45 by miguelro         ###   ########.fr        #
+#    Updated: 2023/03/15 12:37:08 by miguelro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,3 +67,5 @@ fclean:
 
 
 re: fclean all
+
+.PHONY: all clean fclean re
